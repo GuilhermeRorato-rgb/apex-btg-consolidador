@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: apex-btg-consolidador
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn server:app --bind 0.0.0.0:$PORT
-    plan: free
